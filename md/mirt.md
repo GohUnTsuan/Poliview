@@ -33,11 +33,23 @@
 首先是安装和导入包
 
 ```
-xxx
+library(mirt)   
+library(dplyr)
 ```
 
 接着看一眼我们要用的数据
 
 
 
-然后
+接着要进行的步骤是将数据喂mirt的模型之中
+
+```
+mod1 <- (mirt(scale, 1, verbose = FALSE, itemtype = 'graded', SE = TRUE))
+```
+
+常用的几个参数有
+
+itemtype，模型的选择 XXXXXX
+
+跑完模型后，用M2
+
